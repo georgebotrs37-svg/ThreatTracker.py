@@ -1,0 +1,122 @@
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [MainThread] ThreatTracker service started. Polling interval: 300s
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [MainThread] Starting feed collection cycle...
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [FeedWorker_0] Connecting to feed 'CISA Alerts' (Attempt 1/3): https://www.cisa.gov/cybersecurity-advisories/all.xml
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [FeedWorker_1] Connecting to feed 'NIST NVD' (Attempt 1/3): https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [FeedWorker_2] Connecting to feed 'Microsoft Security Blog' (Attempt 1/3): https://www.microsoft.com/en-us/security/blog/feed/
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [FeedWorker_3] Connecting to feed 'Cisco Talos' (Attempt 1/3): https://blog.talosintelligence.com/rss/
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [FeedWorker_4] Connecting to feed 'BleepingComputer' (Attempt 1/3): https://www.bleepingcomputer.com/feed/
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [FeedWorker_5] Connecting to feed 'The Hacker News' (Attempt 1/3): https://feeds.feedburner.com/TheHackersNews
+2026-10-30T20:45:03+0200 [WARNING] [ThreatMonitor] [FeedWorker_0] Error parsing feed 'CISA Alerts' on attempt 1: HTTP Error 403 from https://www.cisa.gov/cybersecurity-advisories/all.xml
+2026-10-30T20:45:03+0200 [INFO] [ThreatMonitor] [FeedWorker_4] Successfully fetched 15 entries from 'BleepingComputer'
+2026-10-30T20:45:04+0200 [INFO] [ThreatMonitor] [FeedWorker_2] Successfully fetched 10 entries from 'Microsoft Security Blog'
+2026-10-30T20:45:04+0200 [WARNING] [ThreatMonitor] [FeedWorker_1] Error parsing feed 'NIST NVD' on attempt 1: HTTP Error 404 from https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml
+2026-10-30T20:45:04+0200 [INFO] [ThreatMonitor] [FeedWorker_5] Successfully fetched 50 entries from 'The Hacker News'
+2026-10-30T20:45:04+0200 [INFO] [ThreatMonitor] [FeedWorker_3] Successfully fetched 15 entries from 'Cisco Talos'
+2026-10-30T20:45:05+0200 [INFO] [ThreatMonitor] [FeedWorker_0] Connecting to feed 'CISA Alerts' (Attempt 2/3): https://www.cisa.gov/cybersecurity-advisories/all.xml
+2026-10-30T20:45:05+0200 [WARNING] [ThreatMonitor] [FeedWorker_0] Error parsing feed 'CISA Alerts' on attempt 2: HTTP Error 403 from https://www.cisa.gov/cybersecurity-advisories/all.xml
+2026-10-30T20:45:05+0200 [INFO] [ThreatMonitor] [FeedWorker_1] Connecting to feed 'NIST NVD' (Attempt 2/3): https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml
+2026-10-30T20:45:06+0200 [WARNING] [ThreatMonitor] [FeedWorker_1] Error parsing feed 'NIST NVD' on attempt 2: HTTP Error 404 from https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml
+2026-10-30T20:45:08+0200 [INFO] [ThreatMonitor] [FeedWorker_0] Connecting to feed 'CISA Alerts' (Attempt 3/3): https://www.cisa.gov/cybersecurity-advisories/all.xml
+2026-10-30T20:45:08+0200 [WARNING] [ThreatMonitor] [FeedWorker_0] Error parsing feed 'CISA Alerts' on attempt 3: HTTP Error 403 from https://www.cisa.gov/cybersecurity-advisories/all.xml
+2026-10-30T20:45:08+0200 [ERROR] [ThreatMonitor] [FeedWorker_0] All 3 retries exhausted for feed 'CISA Alerts'.
+2026-10-30T20:45:09+0200 [INFO] [ThreatMonitor] [FeedWorker_1] Connecting to feed 'NIST NVD' (Attempt 3/3): https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml
+2026-10-30T20:45:10+0200 [WARNING] [ThreatMonitor] [FeedWorker_1] Error parsing feed 'NIST NVD' on attempt 3: HTTP Error 404 from https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml
+2026-10-30T20:45:10+0200 [ERROR] [ThreatMonitor] [FeedWorker_1] All 3 retries exhausted for feed 'NIST NVD'.
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] Ingesting 15 raw items from BleepingComputer
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Trezor warns of suspected crypto-theft implant in hardware wallet (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] Malicious Claude Code extension on Cursor planted SSH backdoors (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] CISA says max severity GitLab flaw now exploited in the wild (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Microsoft finally fixes VPN issues caused by September updates (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] Drupal warns of critical Commerce Core flaw exploited in attacks (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [APT] Binance links $6.3 billion crypto theft to compromised DevOps laptop (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] Binance probes potential $5.8 billion crypto-theft hack (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] Hugging Face malware campaign returns to hijack GPUs for crypto mining (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Data Breach] Japan Airlines suffers third-party data breach exposing passenger info (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Polymarket halts trading after crypto-draining script breach, $2.5M traced (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Fake crypto app on Apple App Store linked to $23K wallet theft (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Chrome extensions with 13.4 million installs caught hijacking searches (Source: BleepingComputer)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] Ingesting 10 raw items from Microsoft Security Blog
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [Ransomware] Tracking AI adoption in North Korean threat actor tradecraft (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] The CISO’s evolving role: Protecting and defending in the agentic era (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [APT] AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [Ransomware] Agents are your newest insiders. Security must move at their speed. (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Managing open-weight model risk in enterprise deployments (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Post-quantum authentication: Why organizations should start testing certificate ecosystems now (Source: Microsoft Security Blog)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] Ingesting 50 raw items from The Hacker News
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [APT] Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [Vulnerability] WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Webinar: How to Build AI Threat Readiness Into Your Security Operations (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers (Source: The Hacker News)
+2026-10-30T20:45:10+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] 26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Other] GitHub Launches npm Firewall to Block Malicious Packages Before Installation (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S. (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [Vulnerability] PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] Wazuh and AI for Enhanced SOC Workflows (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [Vulnerability] Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] AI-Generated Fake Login Pages Are Making Account Takeovers Easier (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [APT] Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Malware] Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [High] [Vulnerability] CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution (Source: The Hacker News)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] Ingesting 15 raw items from Cisco Talos
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] A quiet week in infosec <.< (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] IR trends Q3 2026: Actors impersonate IT help desks in vishing attacks as ransomware activity increases (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Other] NIK C2: The new AI-enabled command-and-control framework (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] From federal SOCs to Talos: Ryan Fetterman on practical security research (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] I had plans for that second (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Compromised eMudhra intermediate certificates (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Critical] [Vulnerability] Two critical RCEs in PHP core (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] Parasitizing trust: How legitimate infrastructure becomes a delivery pipeline for attackers (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] There's only so much code: the rise in vulnerability numbers (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] The Q3 Vulnerability Pulse: Discovery ≠ Exploitation (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Break the silence: Kazakhstan-nexus UAT-6275 targets CIS government organizations (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Vulnerability] Microsoft Patch Tuesday for October 2026 — Snort rules and prominent vulnerabilities (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Low] [Other] Making sure the checks get printed (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] New Threat Detected: [Medium] [Phishing] UAT-11985: AI-assisted event lures delivering real-time Google AitM phishing (Source: Cisco Talos)
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] Ingesting 0 raw items from CISA Alerts
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] Ingesting 0 raw items from NIST NVD
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] Cycle finished. Added 90 alerts. Total in repository: 90
+2026-10-30T20:45:11+0200 [INFO] [ThreatMonitor] [MainThread] ThreatTracker service successfully stopped.
